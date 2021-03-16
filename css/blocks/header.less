@@ -1,0 +1,28 @@
+// main: ../style.less
+
+.header {
+  position: relative;
+
+  padding-top: 1.2rem;
+
+  @media @mobile {
+    &.fixed {
+      position: fixed;
+      z-index: 1000;
+
+      width: 100%;
+
+      background-color: @white;
+    }
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media @mobile {
+    padding-bottom: 20px;
+  }
+}
